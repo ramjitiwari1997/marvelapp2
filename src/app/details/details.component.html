@@ -1,0 +1,75 @@
+<div class="container-fluid">
+<div class="head">
+ <span class="back" (click)="back()"><</span>
+ <span class="text-center">Transformer Inventory</span>
+</div>
+<div class="row head2">
+    <div class='col-xs-7 head2-head'>SERVICE ID</div>
+    <div class=col-xs-5 class="head2-head">DATE</div>
+    <div class='col-xs-7 head2-cont'>
+        {{serviceId}}
+    </div>
+    <div class="col-xs-5 head2-cont">
+        {{detail.date.day}} {{detail.date.month}},{{detail.date.year}}
+    </div>
+    </div>
+    <div class="cont table-responsive">
+
+    <div class="cont-head">
+        PRIMARY DETAILS
+        <div class="cont-body">
+                <div class="cont-body-head">Name Of Data Collecter</div>
+                <div class="cont-body-body">
+                    John Smith
+                </div>
+                <div class="cont-body-head">Serial number</div>
+                <div class="cont-body-body">
+                    257-2626
+                </div>
+                <div class="cont-body-head">Manufacturing Date</div>
+                <div class="cont-body-body">
+                    <span class="glyphicon glyphicon-calendar"></span>
+                    26-01-2017
+                </div> 
+            </div>
+    </div>
+
+    <div class="cont-head">
+            SECONDARY DETAILS
+            <div class="cont-body">
+                    <div class="cont-body-head">Transformer Type</div>
+                <div class="cont-body-body">
+                    voult-type
+                    <span style="float: right;
+                    font-size: 162%;
+                    padding-right: 7%;
+                    margin-top: -5px;">></span>
+                </div>
+        </div>
+    </div>
+
+    <div class="cont-head">
+            Choose Type of Insulation <br>
+            <div class='col-xs-6 trans-type'><span class="glyphicon glyphicon-ok good"></span>Liquid Imerge</div>
+            <div class='col-xs-6 trans-type' style="background-color:white;color:#6c757d">Dry Type</div>  
+    </div>
+    <div class="cont-head">
+            Phase(Distribution)<br>
+            <div class='col-xs-6 trans-type' style="background-color:white;color:#6c757d">Single Phase</div>
+            <div class='col-xs-6 trans-type'><span class="glyphicon glyphicon-ok good"></span>Three Phase</div>  
+    </div>
+
+    <div class="cont-head">
+            Voltage Class(Distribution)<br>
+            <div class='col-xs-6 trans-type'><span class="glyphicon glyphicon-ok good"></span>Low Voltage</div>
+            <div class='col-xs-6 trans-type' style="background-color:white;color:#6c757d">High Voltage</div>  
+    </div>
+    <div class="cont-body-head" style="font-size: 120%">Size KVA</div>
+    <div class="cont-body-body">
+        112.5
+    </div>
+    </div>
+<div class="footer">
+    <span>Proceed to upload pics</span>
+</div>
+</div>

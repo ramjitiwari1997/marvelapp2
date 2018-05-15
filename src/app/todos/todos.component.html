@@ -1,0 +1,54 @@
+
+<div class="container-fluid">
+
+    <div class="sidenav" [@sidenav]='menuState'>
+            <span class="sidenav-close-btn" (click)="toggleMenu()">&times;</span> 
+            <img src="../../assets/images/kohli.jpg" class="img-responsive img-circle" alt="Cinque Terre" width="250" height="236"> 
+            <div class="name">{{inventories.name}}</div>
+              <a href="http://" class="a1">Change Profile</a>
+              <div style="padding-top:18%"></div>
+              <div class="sidenav-link">
+                  <span>Home</span>
+                  <span class="sidenav-link-span">></span>
+              </div>
+              <div class="sidenav-link">
+                  <span>Inventoried</span>
+                  <span class="sidenav-link-span">></span>
+                </div>
+                <div class="sidenav-link"> 
+                    <span>About</span>
+                    <span class="sidenav-link-span">></span>
+                  </div>
+                  <div class="sidenav-link">
+                      <span>Logout</span>
+                    </div>
+               </div>
+               <div class="overlay" [@content]='contentState' (click)="closeSide()"></div>
+    <div class="panel panel-default">
+        <div class="panel-heading row navbar-fixed-top">
+          <span (click)="toggleMenu()" style="font-size:170%;cursor: pointer" class="pl-5">&#9776;</span>
+          <div class="text-center">Transformer Inventory</div>
+        </div>
+        <div class="top-gap"></div>
+        <div>
+        <div class="panel-body" *ngFor="let inventory of inventories.data" (click)="detail(inventory.serviceId)">
+          <div class='row cont' [style.background-color]='getColor(inventory.priority)'>
+            <div class="col-xs-4 cal">
+             <span class="calday">{{inventory.date.day}}</span><br>
+             <span class="calmonth">{{inventory.date.month}}</span>
+            </div>
+            <div class="col-xs-8" style="text-align: center">
+                PRIORITY-{{inventory.priority}}
+            </div>
+          </div>
+            <div class="row data">
+              <div class="col-xs-8 data-head">ServiceID</div>
+              <div class="col-xs-4 data-head">Distance</div>
+              <div class="col-xs-8 data-body">{{inventory.serviceId}}</div>
+              <div class="col-xs-4 data-body">{{inventory.distance}}kms</div>
+
+            </div>
+        </div>
+      </div>
+      </div>
+</div>
