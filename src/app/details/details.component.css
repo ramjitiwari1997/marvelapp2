@@ -71,6 +71,7 @@ cursor: pointer;
     overflow-y: auto;
     margin-top: 108px;
     margin-left: 15px;
+    height:100%;
 }
 .cont-body-head{
     margin-top: 7%;
@@ -83,6 +84,9 @@ cursor: pointer;
     font-size: 108%;
     padding-bottom: 1%;
     border-bottom: 2px solid #F1F1F1;
+}
+#trans-type{
+    cursor: pointer;
 }
 .trans-type{
     border: 1px solid #F1F1F1;

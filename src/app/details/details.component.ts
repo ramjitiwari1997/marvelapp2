@@ -25,8 +25,10 @@ export class DetailsComponent implements OnInit {
     });
   }
   back():void{
-    //console.log(this.invent)
       this.router.navigate(['/home'])
+  }
+  chooseVolt():void{
+    this.router.navigate(['/transtype'])
   }
 
 }

@@ -1,2 +1,3 @@
-    <router-outlet></router-outlet>
-    
+<div class="routerContainer" [@routeAnimation]="getDepth(myOutlet)">
+        <router-outlet #myOutlet="outlet"></router-outlet>
+</div>
