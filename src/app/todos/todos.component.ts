@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {Data} from './../data'
 import{trigger,state,transition,style,animate} from '@angular/animations'
 import { Router } from '@angular/router';
+import {MarvelService} from './../marvel.service'
 @Component({
   selector: 'todos',
   templateUrl: './todos.component.html',
@@ -29,13 +30,15 @@ import { Router } from '@angular/router';
   ]
 })
 export class TodosComponent implements OnInit {
-  data=new Data();
-  inventories=this.data.inventories;
-  constructor(private router:Router) {
+  
+  constructor(private router:Router,private service:MarvelService) {
    }
   ngOnInit() {
     
   }
+  data=this.service.getdata();
+  //data=new Data();
+  inventories=this.data.inventories;
  
   getColor(priority):string{
     if(priority==='LOW')
@@ -59,6 +62,7 @@ closeSide(){
 
 }
 detail(serviceId):void{
+  this.service.setid(serviceId)
   this.router.navigate(['/details/'+serviceId])
 }
 }

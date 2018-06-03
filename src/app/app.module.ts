@@ -9,6 +9,8 @@ import { AppComponent } from './app.component';
 import { TodosComponent } from './todos/todos.component';
 import { DetailsComponent } from './details/details.component';
 import { TranstypeComponent } from './transtype/transtype.component';
+import {MarvelService} from './marvel.service';
+import { FleetComponent } from './fleet/fleet.component'
 
 
 @NgModule({
@@ -16,7 +18,8 @@ import { TranstypeComponent } from './transtype/transtype.component';
     AppComponent,
     TodosComponent,
     DetailsComponent,
-    TranstypeComponent
+    TranstypeComponent,
+    FleetComponent
   ],
   imports: [
     BrowserModule,
@@ -33,11 +36,17 @@ import { TranstypeComponent } from './transtype/transtype.component';
     {
       path:'transtype',component:TranstypeComponent,pathMatch:'full',data:{depth:4}
     },
+    {
+      path:'details1/:id',component:DetailsComponent,pathMatch:'full',data:{depth:5}
+    },
+    {
+      path:'fleet',component:FleetComponent,pathMatch:'full',data:{depth:6}
+    },
   
 
   ])
   ],
-  providers: [],
+  providers: [MarvelService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

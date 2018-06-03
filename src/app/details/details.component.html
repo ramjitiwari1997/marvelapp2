@@ -39,7 +39,7 @@
             <div class="cont-body">
                     <div class="cont-body-head">Transformer Type</div>
                 <div class="cont-body-body" id='trans-type' (click)="chooseVolt()">
-                    voult-type
+                    {{transetype}}
                     <span style="float: right;
                     font-size: 162%;
                     padding-right: 7%;
@@ -69,7 +69,7 @@
         112.5
     </div>
     </div>
-<div class="footer">
-    <span>Proceed to upload pics</span>
+<div class="footer" (click)="upload()">
+    <span >Proceed to upload pics</span>
 </div>
 </div>

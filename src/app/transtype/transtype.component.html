@@ -3,4 +3,32 @@
     <span class="back" (click)="back()"><</span>
     <span class="text-center">Transformer Type</span>
    </div>
+   <div class="radio">
+     <label for="radio-btn1" class="label1" id="labe1">
+       <input type="radio" id="radio-btn1" name="btn" (click)="settransetype('Conventional overhead(Pole-mounted)','labe1')">
+        Conventional overhead<br>
+        (Pole-mounted)
+     </label>
+   </div>
+   <div class="radio">
+      <label for="radio-btn2" class="label1" id="labe2">
+        <input type="radio" id="radio-btn2" name="btn" (click)="settransetype('Pad-mounted','labe2')">
+        Pad-mounted
+      </label>
+    </div>
+    <div class="radio">
+        <label for="radio-btn3" class="label1" id="labe3">
+          <input type="radio" id="radio-btn3" name="btn"(click)="settransetype('Vault-type','labe3')">
+          Vault-type
+        </label>
+      </div>
+      <div class="radio">
+          <label for="radio-btn4" class="label1" id="labe4">
+            <input type="radio" id="radio-btn4" name="btn" (click)="settransetype('Submersible','labe4')">
+            Submersible 
+          </label>
+        </div>
+        <div class="footer" (click)="confirm()">
+            <span>Confirm</span>
+        </div>
 </div>
