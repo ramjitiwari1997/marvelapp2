@@ -34,6 +34,7 @@ cursor: pointer;
     margin-top: 18%;
     text-align: center;
     font-weight: 700;
+    padding-bottom: 5%;
 }
 .center {
     display: block;
@@ -41,16 +42,7 @@ cursor: pointer;
     margin-right: auto;
     width: 50%;
 }
-.icon-span{
-    font-size: 130%;
-    width: 62%;
-    font-weight: 600;
-    opacity: .7;
-}
-#getFile {
-    display: none;
-  }
- .re-head{
+.re-head{
     position: absolute;
     bottom: 0;
     right: 0;
@@ -66,9 +58,27 @@ cursor: pointer;
   }
   .cmt{
       padding-top:1%;
-    margin-bottom: 20%;
+      margin-bottom: 20%;
 
   }
+ .col1{
+     border-right-style: ridge;
+ }
+ .img-responsive{
+     border-radius: 5%;
+ }
+ .cross-span{
+     border:1px solid black;
+     border-radius: 50%;
+     font-size: 200%;
+
+ }
+ .cross{
+     padding-top:27%;
+ }
+ .bar{
+     margin-top:5%;
+ }
 
   .footer {
     position: fixed;

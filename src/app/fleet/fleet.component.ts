@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+import {Location} from '@angular/common';
 
 @Component({
   selector: 'app-fleet',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FleetComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router:Router,private location:Location) { }
 
   ngOnInit() {
   }
-
+back():void{
+this.location.back();
+}
+showname(file: HTMLInputElement):void{
+  let name = file.value;
+  this.router.navigate(['/fleet1'])
+}
 }

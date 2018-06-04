@@ -10,7 +10,8 @@ import { TodosComponent } from './todos/todos.component';
 import { DetailsComponent } from './details/details.component';
 import { TranstypeComponent } from './transtype/transtype.component';
 import {MarvelService} from './marvel.service';
-import { FleetComponent } from './fleet/fleet.component'
+import { FleetComponent } from './fleet/fleet.component';
+import { Fleet1Component } from './fleet1/fleet1.component'
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { FleetComponent } from './fleet/fleet.component'
     TodosComponent,
     DetailsComponent,
     TranstypeComponent,
-    FleetComponent
+    FleetComponent,
+    Fleet1Component
   ],
   imports: [
     BrowserModule,
@@ -42,6 +44,10 @@ import { FleetComponent } from './fleet/fleet.component'
     {
       path:'fleet',component:FleetComponent,pathMatch:'full',data:{depth:6}
     },
+    {
+      path:'fleet1',component:Fleet1Component,pathMatch:'full',data:{depth:7}
+    },
+
   
 
   ])

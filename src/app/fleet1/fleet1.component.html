@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="head">
+        <span class="back" (click)="back()"><</span>
+        <span class="text-center">Fleet Maintenance</span>
+       </div>
+       <div class="head2">
+           UPLOAD PICTURE
+       </div>
+       <div class="col-xs-6 col1">
+         <img src="../../assets/images/transformer.jpg" alt="" class="img-responsive">
+       </div>
+       <div class="col-xs-6">
+          <div class="cross" > 
+            <span class="cross-span">&#10005;</span>
+  
+          </div>
+          <div class="bar">
+              <span style="font-size: 150%;padding-bottom: 2%">img_123555.jpg</span>
+          <div class="progress">
+              
+              <div class="progress-bar" role="progressbar" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                <span class="sr-only">70% Complete</span>
+              </div>
+            </div>
+          </div>
+       </div>
+       <div class=" re-head">
+          <span class="re-span">REMARKS</span>
+          <div class="cmt">
+              <textarea  rows="4" class="form-control" style="background-color: #F9F9F9;" placeholder="Enter Text Here..."></textarea>
+          </div>
+      </div>
+<div class="footer" (click)="upload()">
+        <span >Submit</span>
+    </div>
+</div>
