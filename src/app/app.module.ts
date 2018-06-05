@@ -11,8 +11,8 @@ import { DetailsComponent } from './details/details.component';
 import { TranstypeComponent } from './transtype/transtype.component';
 import {MarvelService} from './marvel.service';
 import { FleetComponent } from './fleet/fleet.component';
-import { Fleet1Component } from './fleet1/fleet1.component'
-
+import { Fleet1Component } from './fleet1/fleet1.component';
+import { InventoryComponent } from './inventory/inventory.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +21,8 @@ import { Fleet1Component } from './fleet1/fleet1.component'
     DetailsComponent,
     TranstypeComponent,
     FleetComponent,
-    Fleet1Component
+    Fleet1Component,
+    InventoryComponent
   ],
   imports: [
     BrowserModule,
@@ -47,8 +48,12 @@ import { Fleet1Component } from './fleet1/fleet1.component'
     {
       path:'fleet1',component:Fleet1Component,pathMatch:'full',data:{depth:7}
     },
-
-  
+    {
+      path:'fleet2',component:FleetComponent,pathMatch:'full',data:{depth:8}
+    },
+    {
+      path:'inventory',component:InventoryComponent,pathMatch:'full',data:{depth:9}
+    }
 
   ])
   ],

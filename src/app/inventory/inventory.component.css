@@ -1,0 +1,86 @@
+.container-fluid{
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.head{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+    background-color: #F5F5F5;
+    padding: 6px;
+    padding-bottom: 34px;
+    border-bottom: 1px solid #E3E3E3;
+}
+.back{
+float: left;
+font-size:243%;
+opacity: 0.4;
+padding-left: 2%;
+margin-top: -11px;
+margin-left: -2%;
+cursor: pointer;
+
+}
+.text-center{
+    margin:auto;
+    padding-bottom: 2%;
+    font-size: 147%;
+}
+.head2{
+    font-size: 144%;
+    margin-top: 18%;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 5%;
+}
+.cont1{
+    margin-top: 55px;
+    margin-left: 2%
+}
+.cont2{
+    margin-top:25px;
+    margin-left: 2%;
+}
+.sid{
+    font-size: 150%;
+    font-weight: 650;
+}
+.cord{
+    color:#DD5545;
+    font-size: 130%;
+    font-weight: 600;
+}
+.loc{
+    font-size: 120%;
+}
+.d-head{
+    font-size: 115%;
+    font-weight: 600;
+}
+.d-body{
+    font-size: 135%;
+    opacity: .7;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.remark{
+
+    background-color:#DDDDDD;
+    margin-top:10px;
+    margin-left: 2px;
+    width: 103% !important;
+}
+.r-head{
+padding:15px;
+font-size: 140%;
+opacity: .7;
+font-weight: 500;
+}
+.r-body{
+    padding-left: 15px;
+    font-size: 120%;
+    opacity: .7;
+}

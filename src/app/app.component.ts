@@ -16,7 +16,7 @@ import {
     trigger('routeAnimation',[
 
 
-      transition('1=>3,3=>6,5=>6',[
+      transition('1=>3,3=>6,5=>6,1=>9,7=>9,8=>9',[
         style({height:'!'}),
         query(':enter',style({transform: 'translateX(100%)'})),
         query(':enter,:leave',style({position:'absolute',top:0,left:0,right:0,bottom:0}),{optional:true}),
@@ -25,7 +25,7 @@ import {
           query(':leave',[animate('0.3s cubic-bezier(.35,0,.25,1)',style({position:'fixed',transform: 'translateX(-100%)'}))],{optional:true})
         ])
       ]),
-      transition('3=>1,4=>3,5=>1,6=>5,6=>3',[
+      transition('3=>1,4=>3,5=>1,6=>5,6=>3,9=>8,9=>7,9=>1',[
         style({height:'!'}),
         query(':enter',style({transform: 'translateX(-100%)'})),
         query(':enter,:leave',style({position:'absolute',top:0,left:0,right:0,bottom:0}),{optional:true}),
@@ -34,7 +34,7 @@ import {
           query(':leave',[animate('0.3s cubic-bezier(.35,0,.25,1)',style({position:'fixed',transform: 'translateX(100%)'}))],{optional:true})
         ])
       ]),
-      transition('3=>4,5=>4',[
+      transition('3=>4,5=>4,7=>8',[
         style({height:'!'}),
         query(':enter',style({transform: 'translateY(100%)'})),
         query(':enter,:leave',style({position:'fixed',top:0,left:0,right:0,bottom:0}),{optional:true}),

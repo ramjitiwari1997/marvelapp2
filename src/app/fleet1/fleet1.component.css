@@ -79,6 +79,25 @@ cursor: pointer;
  .bar{
      margin-top:5%;
  }
+ .add-more{
+     border-top-style: ridge;
+     border-width: thin;
+     margin-top: 52%;
+     padding-left: 3%;
+     padding-top: 2%;
+     cursor: pointer;
+ }
+ .glyphicon{
+     font-size: 150%;
+ }
+ .cam2{
+    font-size: 130%;
+    margin-left: 6%;
+    position: absolute;
+    padding-top: 2%;
+    font-weight: 700;
+    opacity: .6;
+ }
 
   .footer {
     position: fixed;

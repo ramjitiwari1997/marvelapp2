@@ -140,7 +140,7 @@ cursor: pointer;
     z-index: 2;
     cursor: pointer;
 }
-@media only screen and (min-width:1024px){
+@media only screen and (min-width:1023px){
     .sidenav{
         width:20% !important;
     }
@@ -148,7 +148,7 @@ cursor: pointer;
         left: 20%;
     }
     .top-gap{
-        padding-top: 8%;
+        padding-top:1%;
     }
     .container-fluid{
         width:70% !important;
